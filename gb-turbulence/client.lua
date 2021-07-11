@@ -37,8 +37,8 @@ Citizen.CreateThread(function()
 							SetHelicopterRollPitchYawMult(veh, 0.0)
 						else
 							SetHelicopterRollPitchYawMult(veh, turbulence)
-                            SetHeliTurbulenceScalar(veh, roll)
-                            --SetVehicleGeneratesEngineShockingEvents(veh, CEventShockingHelicopterOverhead) --param not a string thus undefined
+							SetHeliTurbulenceScalar(veh, roll)
+							--SetVehicleGeneratesEngineShockingEvents(veh, CEventShockingHelicopterOverhead) --param not a string thus undefined
 						end
 					end, GetPlayerServerId(ped), license.heli)
 				elseif IsPedInAnyPlane(ped) then
@@ -48,7 +48,7 @@ Citizen.CreateThread(function()
 							SetPlaneTurbulenceMultiplier(veh, 0.0)
 						else
 							SetPlaneTurbulenceMultiplier(veh, turbulence)
-                            --SetVehicleGeneratesEngineShockingEvents(veh, CEventShockingHelicopterOverhead) --param not a string thus undefined
+							--SetVehicleGeneratesEngineShockingEvents(veh, CEventShockingHelicopterOverhead) --param not a string thus undefined
 						end
 					end, GetPlayerServerId(ped), license.plane)
 				else
