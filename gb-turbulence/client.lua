@@ -19,6 +19,7 @@ local license = {
 	plane = 'plane',
 	heli = 'heli'
 }
+
 local inAircraft = false
 
 Citizen.CreateThread(function()
